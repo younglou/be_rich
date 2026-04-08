@@ -19,8 +19,10 @@ SCCO_TICKER = "SCCO"    # 南方铜业
 UPDATE_INTERVAL = 60    # 更新间隔（秒）
 
 # 溢价率计算常数
-PREMIUM_MULTIPLIER = 4.2        # 倍数系数
-PREMIUM_DIVISOR = 900 * 1e8     # 900亿
+# 4.2：经验倍数，反映SCCO铜资源的开采年限折算因子
+PREMIUM_MULTIPLIER = 4.2
+# 900亿：参考基准值（单位：元），代表行业内铜资源的基准估值锚点（约900亿元）
+PREMIUM_DIVISOR = 900 * 1e8     # 900亿 = 9e10
 
 
 class CopperMarketMonitor:
