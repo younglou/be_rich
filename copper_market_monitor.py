@@ -7,6 +7,8 @@
 溢价率公式：(SCCO股价 × 总股本) × 4.2 / 900亿 / 铜期货价格
 """
 
+from __future__ import annotations
+
 import time
 import os
 from datetime import datetime
